@@ -1,0 +1,23 @@
+{
+    "token": "OTkzNDQ4Mjg3MTg3MjQzMDM4.GTVdgF.SwtVH0jsEYU4QLB9v7f2xOjoOgWqn15hMjqkyk",
+    "prefix": "$",
+    "status": "Dev by Prometheus",
+    "suburl": {
+        "https://discord.com/api/webhooks/993504322224664596/pUtpcF-Z1YsveVsHsbjaU7LoachHHBEPu_Y_I8pU04VZ0T8f5t3_gxSTt0_IqyZK79Ok": {
+            "url": "https://www.vinted.fr/vetements?brand_id[]=53&catalog[]=1242&price_from=0&currency=EUR&price_to=500&status[]=6&size_id[]=784",
+            "salon": "general"
+        }
+    },
+    "embed-color-text": "MD",
+    "embed-color": 16777215,
+    "embed-config": {
+        "prix": "oui",
+        "vendeur": "oui",
+        "avis": "oui",
+        "localisation": "oui",
+        "marque": "oui",
+        "taille": "oui",
+        "couleur": "oui",
+        "etat": "oui"
+    }
+}
