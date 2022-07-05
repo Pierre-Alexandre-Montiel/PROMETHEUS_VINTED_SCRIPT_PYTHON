@@ -1,2 +1,2 @@
-heroku ps:scale web=1
-web: python3 loadsub.py
+worker: python3 loadsub.py
+worker: python3 vinted.py
