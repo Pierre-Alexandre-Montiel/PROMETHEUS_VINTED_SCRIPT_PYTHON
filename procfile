@@ -1,2 +1,2 @@
-web python3 loadsub.py
-web python3 vinted.py  
+worker: python3 loadsub.py
+worker: python3 vinted.py  

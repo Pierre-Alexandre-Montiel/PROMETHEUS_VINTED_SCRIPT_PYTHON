@@ -106,7 +106,8 @@ def get_info_post(url):
 def search(url):
     try:
         time.sleep(5)
-        print(f"{Spy.blanc}[{Spy.gris}RECHERCHE{Spy.blanc}] - Le bot cherche des nouveaux items...")
+        print('URL In Search', url)
+        print(f"{Spy.blanc}[{Spy.gris}PLEASE WAIT !!!! SEARCHING{Spy.blanc}] - New items...")
         headers = requests.utils.default_headers()
         headers.update({'User-agent': 'Mozilla/5.0'})
         reponse = requests.get(str(url), headers=headers)
@@ -138,13 +139,14 @@ except:
 
 
 asciiart = f"""{Spy.rouge}
-██╗   ██╗██████╗  ██████╗ ████████╗
-██║   ██║██╔══██╗██╔═══██╗╚══██╔══╝
-██║   ██║██████╔╝██║   ██║   ██║   
-╚██╗ ██╔╝██╔══██╗██║   ██║   ██║   
- ╚████╔╝ ██████╔╝╚██████╔╝   ██║   
-  ╚═══╝  ╚═════╝  ╚═════╝    ╚═╝   
-         Thx 2$py#5430                     \n\n"""
+██████╗░██████╗░░█████╗░███╗░░░███╗███████╗████████╗██╗░░██╗███████╗██╗░░░██╗░██████╗
+██╔══██╗██╔══██╗██╔══██╗████╗░████║██╔════╝╚══██╔══╝██║░░██║██╔════╝██║░░░██║██╔════╝
+██████╔╝██████╔╝██║░░██║██╔████╔██║█████╗░░░░░██║░░░███████║█████╗░░██║░░░██║╚█████╗░
+██╔═══╝░██╔══██╗██║░░██║██║╚██╔╝██║██╔══╝░░░░░██║░░░██╔══██║██╔══╝░░██║░░░██║░╚═══██╗
+██║░░░░░██║░░██║╚█████╔╝██║░╚═╝░██║███████╗░░░██║░░░██║░░██║███████╗╚██████╔╝██████╔╝
+╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚══════╝░╚═════╝░╚═════╝░
+                          
+        !$TheOneAndTheOnlyOne$!                     \n\n"""
 
 print(asciiart + "\n\n")
 
@@ -163,15 +165,15 @@ class moniteur:
                     time.sleep(1)
                     post = dictlist[i - 1]
                     if str(post) in posting:
-                        print(f"{Spy.blanc}[{Spy.rouge}{post}{Spy.blanc}] - Item déjà envoyé !")
+                        print(f"{Spy.blanc}[{Spy.rouge}{post}{Spy.blanc}] - Item already find ==>")
                         time.sleep(1)
                         continue
                     else:
-                        print(f"{Spy.blanc}[{Spy.vert}{post}{Spy.blanc}] - Nouvel item trouvé !")
+                        print(f"{Spy.blanc}[{Spy.vert}{post}{Spy.blanc}] - New item find ==>")
+                        print('URL', x[str(post)]["url"])
                         info = get_info_post(x[str(post)]["url"])
 
-                        data = {"username": "$py",
-                                "avatar_url": "https://cdn.discordapp.com/avatars/755734583005282334/158a0c81f5a3bd1f283bedd5f817a524.webp?size=1024",
+                        data = {"username": "PROMETHEUS",
                                 "embeds": [
                                     {
                                         "description": f"```{configs['embed-color-text']}\n{info['description']}```",
@@ -192,7 +194,7 @@ class moniteur:
                         if configs["embed-config"]["prix"] == "oui":
                             data["embeds"][0]["fields"].append(
                                 {
-                                    "name": "**``💶`` Price**",
+                                    "name": "**Price**",
                                     "value": f"```{configs['embed-color-text']}\n{x[post]['price']}€```",
                                     "inline": True
                                 })
@@ -203,7 +205,7 @@ class moniteur:
                             else:
                                 size_title = x[post]['size_title']
                             data["embeds"][0]["fields"].append({
-                                "name": "**``📏`` Size**",
+                                "name": "**Size**",
                                 "value": f"```{configs['embed-color-text']}\n{size_title}```",
                                 "inline": True
                             })
@@ -211,7 +213,7 @@ class moniteur:
                         if configs["embed-config"]["marque"] == "oui":
                             data["embeds"][0]["fields"].append(
                                 {
-                                    "name": "**``🔖`` Brand**",
+                                    "name": "**Brand**",
                                     "value": f"```{configs['embed-color-text']}\n{x[post]['brand_title']}```",
                                     "inline": True
                                 }
@@ -219,21 +221,21 @@ class moniteur:
 
                         if configs["embed-config"]["avis"] == "oui":
                             data["embeds"][0]["fields"].append({
-                                "name": "``👍``/``👎`` **Grade**",
+                                "name": "**Grade**",
                                 "value": f"```{configs['embed-color-text']}\n{str(info['positive'])} - {str(info['negative'])}```",
                                 "inline": True
                             })
 
                         if configs["embed-config"]["localisation"] == "oui":
                             data["embeds"][0]["fields"].append({
-                                "name": "**``📍``Location **",
+                                "name": "**Location **",
                                 "value": f"```{configs['embed-color-text']}\n{info['pays']}, {info['ville']}```",
                                 "inline": True
                             })
 
                         if configs["embed-config"]["vendeur"] == "oui":
                             data["embeds"][0]["fields"].append({
-                                "name": "**``👨`` Seller**",
+                                "name": "**Seller**",
                                 "value": f"```{configs['embed-color-text']}\n{info['username']}```",
                                 "inline": True
                             })
