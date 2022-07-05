@@ -1,1 +1,2 @@
+worker: python3 loadsub.py
 worker: python3 vinted.py  
