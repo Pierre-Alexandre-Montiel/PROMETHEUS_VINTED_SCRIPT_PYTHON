@@ -2,12 +2,7 @@
     "token": "OTkzNDQ4Mjg3MTg3MjQzMDM4.GTVdgF.SwtVH0jsEYU4QLB9v7f2xOjoOgWqn15hMjqkyk",
     "prefix": "$",
     "status": "Dev by Prometheus",
-    "suburl": {
-        "https://discord.com/api/webhooks/994205178632867880/RqVSdTTsNXHsKKnVvU_a1RKZGSKpln85Jg0eQQvPNu03gW8jSYYfJDlWZQqsb3yAjMZN": {
-            "url": "https://www.vinted.fr/vetements?search_text=Dunk%20Low%20Medium%20Mint%20Gym%20Red",
-            "salon": "general"
-        }
-    },
+    "suburl": {},
     "embed-color-text": "MD",
     "embed-color": 16777215,
     "embed-config": {

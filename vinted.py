@@ -36,7 +36,7 @@ class Spy:
 def get_info_post(url):
     try:
         time.sleep(2)
-        print(f"{Spy.blanc}[{Spy.jaune}RECHERCHE{Spy.blanc}] - Le bot recupere les informations de l'item...")
+        print(f"{Spy.blanc}[{Spy.jaune}PLEASE WAIT{Spy.blanc}] - Le bot recupere les informations de l'item...")
         headers = requests.utils.default_headers()
         headers.update({'User-agent': 'Mozilla/5.0'})
         reponse = requests.get(str(url), headers=headers)
@@ -242,11 +242,11 @@ class moniteur:
                         result = requests.post(weburl, json=data)
 
                         if 429 == result.status_code:
-                            print(f"{Spy.blanc}[{Spy.rouge}ERREUR{Spy.blanc}] - Rate Limit !")
+                            print(f"{Spy.blanc}[{Spy.rouge}ERROR{Spy.blanc}] - Rate Limit !")
                             time.sleep(60)
                         else:
                             posting.append(str(post))
-                            print(f"{Spy.blanc}[{Spy.bleu}POSTE{Spy.blanc}] - Poste envoyé !")
+                            print(f"{Spy.blanc}[{Spy.bleu}SEND TO DISCORD{Spy.blanc}] - Poste envoyé !")
             except:
                 time.sleep(10)
 
