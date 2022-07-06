@@ -3,16 +3,8 @@
     "prefix": "$",
     "status": "Dev by Prometheus",
     "suburl": {
-        "https://discord.com/api/webhooks/993504322224664596/pUtpcF-Z1YsveVsHsbjaU7LoachHHBEPu_Y_I8pU04VZ0T8f5t3_gxSTt0_IqyZK79Ok": {
-            "url": "https://www.vinted.fr/vetements?brand_id[]=53&catalog[]=1242&price_from=0&currency=EUR&price_to=500&status[]=6&size_id[]=784",
-            "salon": "general"
-        },
-        "https://discord.com/api/webhooks/993894941124219063/0_gJmxiwZVyy45GrWwb9tUpEw1QcyK9Frw5075-BbLUZuGyh0rQZ6cWY2CV8rUpwrMFr": {
-            "url": "https://www.vinted.fr/vetements?search_text=dunk%20low&catalog[]=1242&size_id[]=784",
-            "salon": "general"
-        },
-        "https://discord.com/api/webhooks/993895813698822266/QjuzqiBLMENMqqcsp3nioo7fkiBT8rMq5MbYJuzhB3Z1Z96-ERagFFSkQxtz39SKcFPC": {
-            "url": "https://www.vinted.fr/vetements?search_text=dunk%20low&catalog[]=1242&size_id[]=784",
+        "https://discord.com/api/webhooks/994205178632867880/RqVSdTTsNXHsKKnVvU_a1RKZGSKpln85Jg0eQQvPNu03gW8jSYYfJDlWZQqsb3yAjMZN": {
+            "url": "https://www.vinted.fr/vetements?search_text=Dunk%20Low%20Medium%20Mint%20Gym%20Red",
             "salon": "general"
         }
     },
