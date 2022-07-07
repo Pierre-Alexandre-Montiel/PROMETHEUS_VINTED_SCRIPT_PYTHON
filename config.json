@@ -2,7 +2,12 @@
     "token": "OTkzNDQ4Mjg3MTg3MjQzMDM4.GTVdgF.SwtVH0jsEYU4QLB9v7f2xOjoOgWqn15hMjqkyk",
     "prefix": "$",
     "status": "Dev by Prometheus",
-    "suburl": {},
+    "suburl": {
+        "https://discord.com/api/webhooks/994554639028588546/YMYLTw4-GS93vDl7ZuIUM6Fy8QOThNczYcV1gQAYdJOBkW5WvFF_GBD0OVBIa3A1zpsY": {
+            "url": "https://www.vinted.fr/vetements?search_text=Patagonia&size_id[]=207&size_id[]=208&currency=EUR&search_id=1366491713&order=newest_first&catalog[]=76&status[]=6&status[]=1&status[]=2",
+            "salon": "general"
+        }
+    },
     "embed-color-text": "MD",
     "embed-color": 16777215,
     "embed-config": {

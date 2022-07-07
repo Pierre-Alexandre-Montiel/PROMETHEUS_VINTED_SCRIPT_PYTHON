@@ -154,11 +154,14 @@ posting = []
 
 
 sys.stdout.write("\x1b]2;Vinted Bot\x07")
+print("SUCE")
 class moniteur:
     def __init__(self, weburl, url):
         while True:
             try:
+                print("MOI")
                 z = search(str(url))
+                print("LA")
                 x = z["items"]["catalogItems"]["byId"]
                 dictlist = list(x)
                 for i in range(9, -1, -1):
